@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Instagram cropper</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="canvasWrapper">
+    <div class="buttonsWrapper">
+      <div class="imageUploadForm_wrapper">
+        <span>Choose image</span>
+        <input type="file" id="imageLoader" name="imageLoader" class="imageUploadForm" />
+      </div>
+      <a href="#" id="downloadLink">Download</a>
+    </div>
+    <canvas id="imageCanvas"></canvas>
+  </div>
+
+  <div style="visibility:hidden; opacity:0" id="dropzone">
+    <div id="textnode">Drop anywhere!</div>
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+</html>
